@@ -1,10 +1,10 @@
 // Firebase
-const Daos = require('../daos/firebase/mainFirebaseDaos');
-const Cart = new Daos.cartDaos();
+// const Daos = require('../daos/firebase/mainFirebaseDaos');
+// const Cart = new Daos.cartDaos();
 
 // Mongo ---> DESCOMENTAR PARA PROBAR CON MONGODB (COMENTAR EL REQUIRE DE FIREBASE)
-// const Daos = require('../daos/mongo/mainMongoDaos');
-// const Cart = new Daos.cartDaos();
+const Daos = require('../daos/mongo/mainMongoDaos');
+const Cart = new Daos.cartDaos();
 
 module.exports = {
   createCart: async (req, res) => {

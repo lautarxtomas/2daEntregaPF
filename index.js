@@ -1,6 +1,6 @@
 const express = require('express');
 const { urlencoded } = require('express');
-const router = require('./routes/index');
+const router = require('./src/routes/index.js');
 const app = express();
 
 app.use(express.json());

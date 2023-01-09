@@ -9,7 +9,7 @@ async function connectMongoDb() {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-    console.log('Db connectect to', client.connection.name);
+    console.log('Db connected to', client.connection.name);
   } catch (error) {
     console.error(error);
   }
